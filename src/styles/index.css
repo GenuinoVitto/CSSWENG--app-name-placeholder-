@@ -7,9 +7,10 @@ main {
 }
 
 :root {
-    --primary: #002e27;
-    --secondary: #f5fffa;
-    --accent: #02b14f;
+    --primary: #7B0000;
+    --secondary: linear-gradient(#FFE998, #57370D);
+    --accent1: #02b14f;
+    --accent2: #002E27;
     --text-primary: #000000;
     --text-secondary: #ffffff;
     --text-accent: #02b14f;
