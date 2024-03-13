@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+
+:root {
+    --primary: #002e27;
+    --secondary: #f5fffa;
+    --accent: #02b14f;
+    --text-primary: #000000;
+    --text-secondary: #ffffff;
+    --text-accent: #02b14f;
+    --button-primary: ;
+    --button-secondary: ;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--secondary);
+}
+
+
+
+
+
+
+/* Navbar Styles */
+.navbar {
+  margin: 0px;
+  padding: auto;
+  background-color: #ffffff;
+  height: 60px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  display: flex;
+  align-items: center; 
+}
+
+.nav-logo {
+  background: url('/uploads/sprite.png') ;
+  background-position: -117px -384px; 
+  width: 448px;
+  height: 259px;
+  margin-left: 140px;
+  zoom: .2;
+}
+
+.nav-links {
+  margin: auto;
+  float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 15px;
+
+}
+
+.nav-links input {
+  color: var(--text-secondary);
+  font-weight: 700;
+  background-color: var(--primary);
+
+}
+
+.nav-links a:nth-child(3) {
+  background-color: #002E27;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+
+
+/* Main Styles */
+.main {
+  background-image: url('/uploads/iDOLTAXI.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; 
+  background: linear-gradient(to bottom right, transparent 49%, var(--secondary) 50%);
+}
+
+.main-buttons a:last-child {
+  background-color: #002E27; 
+  color: #ffffff;
+  padding: 10px 15px; 
+}
+
+.main-buttons a:first-child {
+  background-color: #02B14F; 
+  color: #ffffff;
+  padding: 10px 15px; 
+}
+
+.main-subhead {
+  width: 50%;
+}
+
+.main-buttons a {
+  text-decoration: none;
+}
+
+
+
+
+/* Services Styles */
+.services {
+  background-color: #FFE998; 
+}
+
+
+
+
+/* About Styles */
+.about {
+  background-color: #7B0000; 
+  color: #ffffff; 
+  padding: 30px;
+}
+
+.about-sec-1 strong,
+.about-sec-2 h1 {
+  color: #FFE998; /* Changed */
+}
+
+
+
+/* About - Section 1 */
+.about-left-pic {
+  background: url('/uploads/sprite.png');
+  background-position: -637px -375px; 
+  width: 498px;
+  height: 387px;
+  zoom: .7;
+  flex-shrink: 0;
+}
+
+.about-sec-1,
+.about-sec-2 {
+  display: flex;
+}
+
+.about-sec1-content,
+.about-sec2-content {
+  padding-left: 20px; 
+  padding-top: 70px;
+}
+
+.about-sec1-content h1 {
+  margin-bottom: 10px;
+}
+
+/* About - Section 2 */
+.about-right-pic {
+  background: url('/uploads/sprite.png');
+  background-position: -1176px -340px; 
+  width: 458px;
+  height: 448px;
+  zoom: .7;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex: row;
+}
+
