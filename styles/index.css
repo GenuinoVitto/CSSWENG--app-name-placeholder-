@@ -144,7 +144,6 @@ html, body {
 
 
 
-
 /* Services Styles */
 .services {
   background: #FFE998;
@@ -268,6 +267,10 @@ html, body {
   border-color: transparent;
 }
 
+.services-btn:hover {
+  border: 2px solid var(--accent2);
+  box-shadow: 2px 2px 0px var(--accent2);
+}
 
 
 /* About Styles */
