@@ -19,6 +19,7 @@ html, body {
   padding: 0px;
   margin: 0px;
   background: var(--primary);
+  scroll-behavior: smooth;
 }
 
 
