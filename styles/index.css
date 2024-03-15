@@ -82,9 +82,9 @@ html, body {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-top: 180px;
-  padding-bottom: 180px;
-  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 200px;
+  padding-left: 55px;
   color: #ffffff;
 }
 
@@ -124,15 +124,21 @@ html, body {
 
 .main-heading {
   font-size: 70px;
-  width: 40%;
+  width: 50%;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 8px var(--shadow);
+  text-shadow: 3px 2px 8px var(--shadow);
+  line-height: 65px;
+}
+
+.main-heading strong {
+  color: var(--text-accent);
 }
 
 .main-subhead {
   width: 50%;
   font-size: 20px;
   margin-top: 0;
+  padding-bottom: 10px;
   text-shadow: 2px 1px 8px var(--shadow);
 }
 
