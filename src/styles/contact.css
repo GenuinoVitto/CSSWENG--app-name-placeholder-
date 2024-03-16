@@ -123,6 +123,20 @@ body, html {
     box-sizing: border-box;
 }
 
+.email-feedback {
+    background-color: var(--text-accent);
+    color: var(--primary);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600; /* Adjust the font weight as needed */
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 /* Footer Styling */
 .footer {
   position: relative; /* Changed from absolute to relative */
