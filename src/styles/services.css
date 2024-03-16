@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary: #7B0000;
+  --secondary: linear-gradient(180deg, #FFE998, #57370D);
+  --accent1: #02b14f;
+  --accent2: #002E27;
+  --text-primary: #002E27;
+  --text-secondary: #ffffff;
+  --text-accent: #FFE998;
+  --shadow: #404040 
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background: #FFE998;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin: 0px;
+    padding: auto;
+    background-color: #ffffff;
+    height: 60px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    display: flex;
+    align-items: center; 
+  }
+  
+  .nav-logo {
+    background: url('/src/uploads/sprite.png') ;
+    background-position: -117px -384px; 
+    width: 448px;
+    height: 259px;
+    margin-left: 140px;
+    zoom: .2;
+  }
+  
+.nav-links {
+    margin: auto;
+    float: right;
+    margin-right: 5px;
+    margin-top: 20px;
+  }
+  
+.nav-links a {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 15px;
+}
+  
+  .nav-links input {
+    color: var(--text-secondary);
+    font-weight: 700;
+    background-color: var(--primary);
+  
+  }
+  
+  .nav-links a:nth-child(4) {
+    background-color: var(--accent2);
+    color: #ffffff;
+    padding: 10px 15px;
+  }
+
+
+/* Services Styles */
+.services {
+    background: #FFE998;
+    border: 2px solid #FFE998;
+    color: var(--accent2);
+    padding-left: 20px;
+    /* border: none; */
+    margin: 0px;
+    padding-bottom: 100px;
+  }
+  
+  
+  .services:after {
+    content: '';
+    position: relative;
+    bottom: 100;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: var(--secondary);
+    /* clip-path: polygon(0 0, 100% 0, 0 100%);
+    transform: scaleX(-1); */
+  }
+  
+  
+  .services-subhead {
+    color: var(--accent2);
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 70px;
+  }
+  
+  .services-heading {
+    color: var(--accent2);
+    font-weight: 900;
+    font-size: 40px;
+    margin-top: 0;
+  }
+  
+  .services-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .services-name {
+    color: var(--accent2);
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 0;
+  }
+  
+  .services-type {
+    color: var(--accent2);
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+  }
+  
+  .services-img {
+    float: left;
+  }
+  
+  #sedan-img {
+    background: url('/src/uploads/services-sprite.png');
+    background-position: -130px -10px;
+    width: 660px;
+    height: 550px;
+    margin-top: 10px;
+    margin-right: 40px;
+    zoom: 0.35;
+    flex-shrink: 0;
+  }
+  
+  #suv-img {
+    background: url('/src/uploads/services-sprite.png');
+    background-position: -1080px -10px;
+    width: 660px;
+    height: 550px;
+    margin-top: 10px;
+    margin-right: 40px;
+    zoom: 0.35;
+    flex-shrink: 0; 
+  }
+  
+  #van-img {
+    background: url('/src/uploads/services-sprite.png');
+    background-position: -130px -600px;
+    width: 660px;
+    height: 550px;
+    margin-top: 10px;
+    margin-right: 40px;
+    zoom: 0.35;
+    flex-shrink: 0; 
+  }
+  
+  #bus-img {
+    background: url('/src/uploads/services-sprite.png');
+    background-position: -1060px -600px;
+    width: 665px;
+    height: 550px;
+    margin-top: 10px;
+    margin-right: 40px;
+    zoom: 0.35;
+    flex-shrink: 0; 
+  }
+  
+  .services-desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 7px;
+  }
+  
+  .services-btn {
+    background-color: var(--accent1);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border-color: transparent;
+  }
+  
+  .services-btn:hover {
+    border: 2px solid var(--accent2);
+    box-shadow: 2px 2px 0px var(--accent2);
+  }
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.footer-middle {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 30px 0px 30px;
+  margin-bottom: 50px;
+}
+
+.footer-logo {
+  background: url('/src/uploads/sprite.png') ;
+  background-position: -117px -384px; 
+  width: 448px;
+  height: 259px;
+  margin-left: 140px;
+  margin-top: 50px;
+  zoom: .2;
+}
+
+.footer-nav {
+  margin-right: auto;
+  /*margin-top: 65px;*/
+}
+
+.footer-nav a{
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-details {
+  margin-right: 20px;
+}
+
+.footer-copyright {
+  font-weight: 600;
+  margin: auto;
+}

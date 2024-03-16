@@ -4,48 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
+    <link rel="stylesheet" href="../styles/services.css">
 </head>
 <body>
-    <!-- NAV [to be placed from template] -->
-    <!-- Top -->
-    <h3 id="page-type">Our Services</h3>
-    <h2 id="services-page-title">What We Do Best</h2>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a class="nav-logo" href="/src/index.html"></a>
+        <div class="nav-links">
+        <a href="/src/pages/about.html">About Us</a>
+        <a href="/src/pages/services.html">Services</a>
+        <a href="/src/pages/contact.html">Contact Us</a>
 
-    <!-- Section-1 -->
-    <section class="services-sec-1" id="services-sec-1">
-        
-        <div class="services-sedan" id="services-sedan">
-            <img id="iDOL-cab" src="" alt="iDOL Taxi image">
-            <h2>Sedan</h2>
-            <h3>Transport Service</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button id="booking">BOOK NOW</button>
+        <!-- Add check for Apple/Android -->
+        <a href="https://bit.ly/3Wi0gdJ" target="_blank">Download App</a>
         </div>
+    </div>
+    <!-- END OF NAVBAR -->
 
-        <div class="services-suv" id="services-suv">
-            <img id="iDOL-suv" src="" alt="iDOL SUV image">
-            <h2>SUV</h2>
-            <h3>Transport Service</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button id="booking">BOOK NOW</button>
+    <!-- SERVICES -->
+  <div class="services" id="services">
+    <h3 class="services-subhead">Our Services</h3>
+    <h1 class="services-heading">What We Do Best</h1>
+    <div class="services-row">
+      <div class="services-section">
+        <div class="services-img" id="sedan-img"></div>
+        <div class="services-text">
+          <h5 class="services-name">Sedan</h5>
+          <h6 class="services-type">Transport Service</h6>
+          <p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="services-btn" onclick="window.location.href='https://m.me/idoltaxiph'">Book Now</button>
+
         </div>
-
-        <div class="services-van" id="services-van">
-            <img id="iDOL-van" src="" alt="iDOL Van image">
-            <h2>Van</h2>
-            <h3>Transport Service</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button id="booking">BOOK NOW</button>
+      </div>
+      <div class="services-section">
+        <div class="services-img" id="suv-img"></div>
+        <div class="services-text">
+          <h5 class="services-name">SUV</h5>
+          <h6 class="services-type">Transport Service</h6>
+          <p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="services-btn" onclick="window.location.href='https://m.me/idoltaxiph'">Book Now</button>
         </div>
-
-        <div class="services-bus" id="services-bus">
-            <img id="iDOL-bus" src="" alt="iDOL Bus image">
-            <h2>Bus</h2>
-            <h3>Transport Service</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button id="booking">BOOK NOW</button>
+      </div>
+    </div>
+    <div class="services-row">
+      <div class="services-section">
+        <div class="services-img" id="van-img"></div>
+        <div class="services-text">
+          <h5 class="services-name">Van</h5>
+          <h6 class="services-type">Transport Service</h6>
+          <p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="services-btn" onclick="window.location.href='https://m.me/idoltaxiph'">Book Now</button>
         </div>
+      </div>
+      <div class="services-section">
+        <div class="services-img" id="bus-img"></div>
+        <div class="services-text">
+          <h5 class="services-name">Bus</h5>
+          <h6 class="services-type">Transport Service</h6>
+          <p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="services-btn" onclick="window.location.href='https://m.me/idoltaxiph'">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF SERVICES -->
 
-    </section>
+  <!-- FOOTER -->
+  <div class="footer">
+    <a class="footer-logo" href="/src/index.html"></a>
+    <div class="footer-middle">
+        <div class="footer-nav">
+            <a href="/src/pages/about.html">About Us</a>
+            <a href="/src/pages/services.html">Services</a>
+            <a href="/src/pages/contact.html">Contact Us</a>
+        </div>
+        <div class="footer-details">
+            <p>123 Street, Barangay Hehe, Cool City</p>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>IDOL TAXI 2024 | All Rights Reserved</p>
+    </div>
+</div>
+<!-- END OF FOOTER -->
 </body>
 </html>

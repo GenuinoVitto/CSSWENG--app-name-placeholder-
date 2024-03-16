@@ -23,10 +23,6 @@ html, body {
 }
 
 
-
-
-
-
 /* Navbar Styles */
 .navbar {
   margin: 0px;
@@ -69,13 +65,11 @@ html, body {
 
 }
 
-.nav-links a:nth-child(3) {
+.nav-links a:nth-child(4) {
   background-color: var(--accent2);
   color: #ffffff;
   padding: 10px 15px;
 }
-
-
 
 /* Main Styles */
 .main {
@@ -345,115 +339,6 @@ html, body {
   zoom: .8;
 }
 
-/* Contact Styles */
-.contact-subhead {
-  color: var(--accent2);
-  font-weight: 700;
-  font-size: 30px;
-  margin-bottom: 0;
-  margin-top: 70px;
-}
-
-.contact-heading {
-  color: var(--text-secondary);
-  font-weight: 900;
-  font-size: 40px;
-  margin-top: 0;
-}
-
-#contact-core h3, 
-#contact-core h2, 
-#contact-core p, 
-#contact-form label, 
-#contact-form button {
-    color: var(--text-accent); /* This is the color used in "Let's get connected" */
-}
-
-#contact-form button {
-    background-color: var(--text-accent);
-    color: var(--primary); /* This is the background color used on the page */
-}
-
-#contact-form .form-group {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-#contact-form input[type="email"],
-#contact-form textarea {
-    width: calc(100% - 20px); /* Adjust the width as needed */
-    margin-bottom: 10px;
-}
-
-/* Ensure the rest of the content is above the footer */
-#contact-core {
-  margin-bottom: 60px; /* This should be equal or more than the height of your footer */
-}
-
-/* Contact Section Styles */
-#contact-core {
-  padding: 40px;
-  color: var(--text-secondary);
-}
-
-#contact-core h3 {
-  font-weight: 600; /* Adjust the font weight as needed */
-}
-
-#contact-core h2 {
-  font-size: 2em;
-  font-weight: 900; /* Adjust the font weight as needed */
-  color: var(--text-accent);
-}
-
-.contact-prompt {
-  text-align: center;
-  font-weight: bold;
-}
-
-#contact-form {
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-#contact-form label {
-  color: var(--text-accent);
-  display: block;
-  margin-top: 20px;
-  font-weight: 500; /* Adjust the font weight as needed */
-  font-size: 1.25em;
-}
-
-#contact-form input[type="email"],
-#contact-form textarea {
-  width: 100%;
-  padding: 20px;
-  margin-top: 5px;
-  border: none;
-  border-radius: 5px;
-  font-weight: 400; /* Adjust the font weight as needed */
-  font-size: 1em;
-  box-sizing: border-box;
-}
-
-#contact-form textarea {
-height: 210px; /* Set the height of the textarea */
-}
-
-#contact-form button {
-  background-color: var(--text-accent);
-  color: var(--primary);
-  padding: 20px 40px;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600; /* Adjust the font weight as needed */
-  font-size: 1em;
-  margin-top: 20px;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
 /* Footer */
 .footer {
     display: flex;
@@ -494,7 +379,33 @@ height: 210px; /* Set the height of the textarea */
   margin-right: 20px;
 }
 
-.footer-copyright {
+.facebook {
+  width: 80%;
   font-weight: 600;
-  margin: auto;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
+
+.fb-btn {
+  background-color: var(--accent1);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  padding: 5px 20px;
+  font-weight: 600;
+  font-size: 25px;
+  border-color: transparent;
+}
+
+.fb-btn:hover {
+  border: 2px solid var(--accent2);
+}
+
+.footer-copyright p {
+  margin: auto;
+  text-align: center;
+}
+
+
