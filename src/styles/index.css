@@ -404,8 +404,10 @@ html, body {
 }
 
 .footer-copyright p {
+  font-weight: 600;
   margin: auto;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 
