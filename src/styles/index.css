@@ -65,7 +65,7 @@ html, body {
 
 }
 
-.nav-links a:nth-child(4) {
+.nav-links a:nth-child(2) {
   background-color: var(--primary);
   color: #ffffff;
   padding: 10px 15px;
