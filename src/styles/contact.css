@@ -15,21 +15,20 @@ html, body {
     font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
-    background: var(--primary);
+    background-color: #F4F6FC;
 }
 
 /* Contact Form Section Styling */
 #contact-core h3, 
 #contact-core h2, 
-#contact-core p, 
+
 #contact-form label, 
 #contact-form button {
     color: var(--text-accent); /* This is the color used in "Let's get connected" */
 }
 
-#contact-form button {
-    background-color: var(--text-accent);
-    color: var(--primary); /* This is the background color used on the page */
+#contact-core p {
+    color:#000000; /* Send us an email */
 }
 
 #contact-form .form-group {
@@ -77,7 +76,7 @@ body, html {
 #contact-core h2 {
     font-size: 2em;
     font-weight: 900; /* Adjust the font weight as needed */
-    color: var(--text-accent);
+    color: var(--primary);
 }
 
 #contact-form {
@@ -86,11 +85,11 @@ body, html {
     margin: 0 auto;
 }
 
-#contact-form label {
-    color: var(--text-accent);
+#contact-form label { /* Email and Message */
+    color: #000000;
     display: block;
     margin-top: 20px;
-    font-weight: 500; /* Adjust the font weight as needed */
+    font-weight: 700;
     font-size: 1.25em;
 }
 
@@ -124,8 +123,8 @@ body, html {
 }
 
 .email-feedback {
-    background-color: var(--text-accent);
-    color: var(--primary);
+    background-color: #000000;
+    color: #ffffff;
     padding: 20px 60px;
     border: none;
     border-radius: 5px;

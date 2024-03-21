@@ -35,10 +35,15 @@ html, body {
 }
 
 .nav-logo {
-  background: url('/src/uploads/sprite.png') ;
-  background-position: -117px -384px; 
-  width: 448px;
-  height: 259px;
+  /*
+    TO DO: remove the white bg 
+      resolved this before by using div instead of a class
+      but if you can using a class, then you may do so
+  */
+  background: url('/src/uploads/footer-sprite.png'); 
+  background-position: -114px -391px; 
+  width: 458px;
+  height: 253px;
   margin-left: 140px;
   zoom: .2;
 }
@@ -73,7 +78,11 @@ html, body {
 
 /* Main Styles */
 .main {
-  background-image: url('/src/uploads/iDOLTAXI.jpg');
+  /* 
+    TO DO: find better background pic since puro blue siya 
+    if none, figure out paano ma-eemphasize yung "First" and "Best Taxi Service"
+  */
+  background-image: url('/src/uploads/iDOLTAXI.jpg'); 
   background-size: cover;
   background-position: center;
   position: relative;
@@ -127,7 +136,7 @@ html, body {
 }
 
 .main-heading strong {
-  color: var(--text-secondary);
+  color: var(--primary);
 }
 
 .main-subhead {
@@ -147,6 +156,9 @@ html, body {
 
 
 /* Services Styles */
+  /*
+    TO DO: make the space sa top ng Our Services and bottom ng Van even
+  */
 .services {
   background: var(--text-accent);
   border: 2px solid var(--text-accent);
@@ -175,7 +187,7 @@ html, body {
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 0;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .services-heading {
@@ -301,18 +313,21 @@ html, body {
 
 .about-sec-1 strong,
 .about-sec-2 h1 {
+  /*
+    TO DO: find the best shadow
+  */
   color: var(--primary); /* Changed */
   font-weight: 800;
+  text-shadow: 3px 2px 8px var(); 
 }
 
 /* About - Section 1 */
 .about-left-pic {
-  background: url('/src/uploads/sprite.png');
-  background-position: -637px -375px; 
-  width: 500px;
-  height: 390px;
-  zoom: .8;
-  flex-shrink: 0;
+  background: url('/src/uploads/about-sprite.png');
+  background-position: -115px -54px; 
+  width: 681px;
+  height: 490px;
+  zoom: .6;
 }
 
 .about-sec-1,
@@ -334,18 +349,19 @@ html, body {
 
 /* About - Section 2 */
 .about-right-pic {
-  background: url('/src/uploads/sprite.png');
-  background-position: -1176px -340px; 
-  width: 460px;
-  height: 450px;
-  zoom: .8;
+  background: url('/src/uploads/about-sprite.png');
+  background-position: -1035px -524px; 
+  width: 625px;
+  height: 628px;
+  zoom: .6;
 }
 
 /* Footer */
 .footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 
 .footer-middle {
@@ -356,10 +372,10 @@ html, body {
 }
 
 .footer-logo {
-  background: url('/src/uploads/sprite.png') ;
-  background-position: -117px -384px; 
-  width: 448px;
-  height: 259px;
+  background: url('/src/uploads/footer-sprite.png') ;
+  background-position: -112px -381px; 
+  width: 462px;
+  height: 264px;
   margin-left: 140px;
   margin-top: 50px;
   zoom: .2;
