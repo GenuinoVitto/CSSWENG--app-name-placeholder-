@@ -35,11 +35,6 @@ html, body {
 }
 
 .nav-logo {
-  /*
-    TO DO: remove the white bg 
-      resolved this before by using div instead of a class
-      but if you can using a class, then you may do so
-  */
   background: url('/src/uploads/footer-sprite.png'); 
   background-position: -114px -391px; 
   width: 458px;
@@ -78,10 +73,6 @@ html, body {
 
 /* Main Styles */
 .main {
-  /* 
-    TO DO: find better background pic since puro blue siya 
-    if none, figure out paano ma-eemphasize yung "First" and "Best Taxi Service"
-  */
   background-image: url('/src/uploads/iDOLTAXI.jpg'); 
   background-size: cover;
   background-position: center;
@@ -131,18 +122,19 @@ html, body {
   font-size: 70px;
   width: 50%;
   margin-bottom: 10px;
-  text-shadow: 3px 2px 8px var(--shadow);
   line-height: 65px;
+  text-shadow: 1px 1px 15px #000000; 
 }
 
 .main-heading strong {
-  color: var(--primary);
+  color: #FFFFFF;
+  text-shadow: 1px 1px 10px var(--primary);
 }
 
 .main-subhead {
   width: 50%;
   font-size: 20px;
-  margin-top: 0;
+  margin-top: 10;
   padding-bottom: 10px;
   text-shadow: 2px 1px 8px var(--shadow);
 }
@@ -156,9 +148,6 @@ html, body {
 
 
 /* Services Styles */
-  /*
-    TO DO: make the space sa top ng Our Services and bottom ng Van even
-  */
 .services {
   background: var(--text-accent);
   border: 2px solid var(--text-accent);
@@ -327,7 +316,7 @@ html, body {
   background-position: -115px -54px; 
   width: 681px;
   height: 490px;
-  zoom: .6;
+  zoom: .4;
 }
 
 .about-sec-1,
@@ -353,7 +342,7 @@ html, body {
   background-position: -1035px -524px; 
   width: 625px;
   height: 628px;
-  zoom: .6;
+  zoom: .5;
 }
 
 /* Footer */
