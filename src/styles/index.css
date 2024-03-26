@@ -415,4 +415,36 @@ html, body {
   text-align: center;
 }
 
+.download-app {
+  background-color: #ffffff; 
+  text-align: center;
+  padding: 10px 0; 
+}
+
+.download-app h2 {
+  color: #000; 
+  font-size: 80px; 
+  margin-bottom: 20px; 
+  margin-top: 0px;
+  font-weight: bold; 
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.download-apple img, .download-google img {
+  height: 80px;
+  width: auto; 
+}
+
+@media (max-width: 768px) {
+  .download-buttons {
+    flex-direction: column; 
+    gap: 5px; 
+  }
+}
 
