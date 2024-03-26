@@ -42,6 +42,45 @@ html, body {
     margin-bottom: 10px;
 }
 
+/* Find Us on FB */
+.find-us:hover {
+    background-color: var(--primary);
+}
+
+.find-us {
+    position: relative;
+    bottom: 0;
+    left: 84%;
+    transform: translateX(-50%);
+    width: 370px;
+    background-color: #000000;
+    color: white;
+    border-top-left-radius: 80px;
+    text-align: center;
+    padding: 20px;
+    z-index: 999;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none;
+}
+
+.find-us-text {
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 10px; 
+    margin-left: 35px;
+}
+
+.facebook-icon {
+    background-image: url('/src/uploads/sprite.png');
+    background-position: -1542px -402px;
+    width: 208px;
+    height: 206px;
+    zoom: .3;
+    display: inline-block;
+}
+
 /* Fix for footer positioning */
 body, html {
     height: 100%;
@@ -151,4 +190,3 @@ body, html {
   display: table;
   clear: both;
 }
-

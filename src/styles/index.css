@@ -35,7 +35,7 @@ html, body {
 }
 
 .nav-logo {
-  background: url('/src/uploads/footer-sprite.png'); 
+  background: url('/src/uploads/sprite.png'); 
   background-position: -114px -391px; 
   width: 458px;
   height: 253px;
@@ -361,7 +361,7 @@ html, body {
 }
 
 .footer-logo {
-  background: url('/src/uploads/footer-sprite.png') ;
+  background: url('/src/uploads/sprite.png') ;
   background-position: -112px -381px; 
   width: 462px;
   height: 264px;
