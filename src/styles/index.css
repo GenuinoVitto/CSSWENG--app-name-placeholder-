@@ -4,13 +4,10 @@
 
 
 :root {
-  --primary: #7B0000;
-  --secondary: linear-gradient(180deg, #FFE998, #57370D);
-  --accent1: #02b14f;
-  --accent2: #002E27;
-  --text-primary: #002E27;
-  --text-secondary: #ffffff;
-  --text-accent: #f4f6fc;
+  --primary: #BD272E;
+  --secondary: #000000;
+  --accent1: #F4F6FC;
+  --accent2: #FFFFFF;
   --shadow: #404040 
 }
 
@@ -18,7 +15,7 @@ html, body {
   font-family: "Montserrat", sans-serif;
   padding: 0px;
   margin: 0px;
-  background: var(--primary);
+  background: var(--secondary);
   scroll-behavior: smooth;
 }
 
@@ -101,7 +98,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 80px;
-  background: var(--text-accent);
+  background: var(--accent1);
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
@@ -149,8 +146,8 @@ html, body {
 
 /* Services Styles */
 .services {
-  background: var(--text-accent);
-  border: 2px solid var(--text-accent);
+  background: var(--accent1);
+  border: 2px solid var(--accent1);
   color: #000000;
   padding-left: 20px;
   /* border: none; */
@@ -165,7 +162,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 90px;
-  background: var(--text-accent);
+  background: var(--accent1);
   clip-path: polygon(0 0, 100% 0, 0 100%);
   transform: scaleX(-1);
 }
@@ -265,7 +262,7 @@ html, body {
 
 .services-btn {
   background-color: var(--primary);
-  color: var(--text-secondary);
+  color: var(--accent2);
   text-transform: uppercase;
   padding: 5px 20px;
   font-weight: 600;
@@ -274,14 +271,15 @@ html, body {
 }
 
 .services-btn:hover {
-  border: 2px solid var(--text-accent);
-  box-shadow: 2px 2px 0px var(--accent2);
+  border: 2px solid var(--primary);
+  box-shadow: 2px 2px 0px var(--shadow);
 }
 
 
 /* About Styles */
 .about {
-  background-color: #000000; 
+  background-image: url(/src/uploads/about-bg.png); 
+  background-position: 100px -150px;
   color: #ffffff; 
   padding: 30px; 
 }
@@ -316,7 +314,7 @@ html, body {
   background-position: -115px -54px; 
   width: 681px;
   height: 490px;
-  zoom: .4;
+  zoom: .5;
 }
 
 .about-sec-1,
@@ -328,7 +326,7 @@ html, body {
 .about-sec2-content {
   width: 1000px;
   font-size: 20px;
-  padding-left: 20px; 
+  padding-left: 30px; 
   padding-top: 40px;
 }
 
