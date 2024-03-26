@@ -42,6 +42,15 @@ html, body {
     margin-bottom: 10px;
 }
 
+#contact-message {
+    resize: none;
+}
+
+#contact-email::placeholder,
+#contact-message::placeholder {
+    font-family: "Montserrat", sans-serif;
+}
+
 /* Find Us on FB */
 .find-us:hover {
     background-color: var(--primary);
