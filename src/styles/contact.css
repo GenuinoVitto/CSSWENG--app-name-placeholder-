@@ -128,6 +128,13 @@ body, html {
     color: var(--primary);
 }
 
+/* Clear floats after the contact section */
+#contact-core::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 #contact-form {
     font-size: 1.1em;
     max-width: 700px;
@@ -199,11 +206,4 @@ body, html {
   background-color: #ffffff;
   box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2);
   clear: both; /* Clear floats to ensure the footer stays at the bottom */
-}
-
-/* Clear floats after the contact section */
-#contact-core::after {
-  content: "";
-  display: table;
-  clear: both;
 }
