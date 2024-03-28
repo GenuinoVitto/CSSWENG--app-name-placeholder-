@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary: #7B0000;
-    --secondary: linear-gradient(180deg, #FFE998, #57370D);
-    --accent1: #02b14f;
-    --accent2: #002E27;
-    --text-primary: #002E27;
-    --text-secondary: #ffffff;
-    --text-accent: #FFE998;
-    --shadow: #404040;
-}
+    --primary: #BD272E;
+    --secondary: #000000;
+    --accent1: #F4F6FC;
+    --accent2: #FFFFFF;
+    --shadow: #404040 
+  }
 
 html, body {
     font-family: "Montserrat", sans-serif;
@@ -21,7 +18,6 @@ html, body {
 /* Contact Form Section Styling */
 #contact-core h3, 
 #contact-core h2, 
-
 #contact-form label, 
 #contact-form button {
     color: var(--text-accent); /* This is the color used in "Let's get connected" */
@@ -29,6 +25,7 @@ html, body {
 
 #contact-core p {
     color:#000000; /* Send us an email */
+    margin-top: 0; 
 }
 
 #contact-form .form-group {
@@ -50,6 +47,88 @@ html, body {
 #contact-message::placeholder {
     font-family: "Montserrat", sans-serif;
 }
+
+/* Ensure the rest of the content is above the footer */
+#contact-core {
+    margin-bottom: 60px; /* This should be equal or more than the height of your footer */
+}
+
+/* Contact Section Styles */
+#contact-core {
+    padding: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#contact-core h3 {
+    font-weight: 600; /* Adjust the font weight as needed */
+}
+
+#contact-core h2 {
+    font-size: 2em;
+    font-weight: 900; /* Adjust the font weight as needed */
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* Clear floats after the contact section */
+#contact-core::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#contact-form {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#contact-form label { /* Email and Message */
+    color: #000000;
+    display: block;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400; /* Adjust the font weight as needed */
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+  height: 160px; /* Set the height of the textarea */
+}
+
+.email-feedback {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 10px;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.email-feedback:hover {
+    background-color: var(--primary);
+    color: var(--accent1);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
 
 /* Find Us on FB */
 .find-us:hover {
@@ -91,6 +170,7 @@ html, body {
     display: inline-block;
 }
 
+/* Footer Styling */
 /* Fix for footer positioning */
 body, html {
     height: 100%;
@@ -98,112 +178,54 @@ body, html {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /*height: 60px; /* Set the height of your footer */
-    background-color: #ffffff;
-    box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Ensure the rest of the content is above the footer */
-#contact-core {
-    margin-bottom: 60px; /* This should be equal or more than the height of your footer */
-}
-
-/* Contact Section Styles */
-#contact-core {
-    padding: 40px;
-    text-align: center;
-    color: var(--text-secondary);
-}
-
-#contact-core h3 {
-    font-weight: 600; /* Adjust the font weight as needed */
-}
-
-#contact-core h2 {
-    font-size: 2em;
-    font-weight: 900; /* Adjust the font weight as needed */
-    color: var(--primary);
-}
-
-/* Clear floats after the contact section */
-#contact-core::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-#contact-form {
-    font-size: 1.1em;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-#contact-form label { /* Email and Message */
-    color: #000000;
-    display: block;
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 1.25em;
-}
-
-#contact-form input[type="email"],
-#contact-form textarea {
-    width: 100%;
-    padding: 20px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-    font-weight: 400; /* Adjust the font weight as needed */
-    font-size: 1em;
-    box-sizing: border-box;
-}
-
-#contact-form textarea {
-  height: 210px; /* Set the height of the textarea */
-}
-
-#contact-form button {
-    background-color: var(--text-accent);
-    color: var(--primary);
-    padding: 20px 40px;
-    border: none;
-    border-radius: 5px;
-    font-weight: 600; /* Adjust the font weight as needed */
-    font-size: 1em;
-    margin-top: 20px;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-.email-feedback {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px 60px;
-    border: none;
-    border-radius: 5px;
-    font-weight: 600; /* Adjust the font weight as needed */
-    font-size: 1em;
-    margin-top: 20px;
-    cursor: pointer;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-.email-feedback:hover {
-    background-color: var(--primary);
-    color: var(--text-secondary);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-/* Footer Styling */
-.footer {
-  position: relative; /* Changed from absolute to relative */
+  position: relative;
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2);
-  clear: both; /* Clear floats to ensure the footer stays at the bottom */
+  clear: both;
+}
+
+.footer-contact {
+    text-align: left;
+    margin-bottom: 20px;
+    
+}
+
+.footer-contact p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-contact a {
+    display: block;
+    color: var(--primary);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+/* javascript style */
+.error {
+    color: var(--primary); 
+    background-color: #FFD6CC; 
+    border: 1px solid var(--primary);
+    padding: 10px; 
+    border-radius: 5px;
+    display: block;
+    text-align: center; 
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 30px;
+}
+
+.success {
+    color: green;
+    background-color: #DFF0D8; /* Light green background */
+    border: 1px solid #3C763D; /* Dark green border */
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 128, 0, 0.2); /* Adjust shadow color */
+    margin-bottom: 30px;
 }
