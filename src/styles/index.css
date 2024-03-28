@@ -324,8 +324,15 @@ html, body {
 .about-sec2-content {
   width: 1000px;
   font-size: 20px;
-  padding-left: 30px; 
-  padding-top: 40px;
+  padding: 25px;
+}
+
+.about-sec1-content {
+  line-height: .5;
+}
+
+.about-sec1-content h4 {
+  color: var(--primary);
 }
 
 .about-sec1-content h1 {
