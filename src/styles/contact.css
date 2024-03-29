@@ -196,3 +196,12 @@ html, body {
     box-shadow: 0 2px 4px rgba(0, 128, 0, 0.2); /* Adjust shadow color */
     margin-bottom: 30px;
 }
+
+.footer {
+    background-color: #ff7f7f !important; /* This is a light, pleasing shade of red, adjust as needed */
+  }
+
+  .footer-nav {
+    margin-top: 16px; /* Adjust as needed */
+    margin-left: 40px;
+  }

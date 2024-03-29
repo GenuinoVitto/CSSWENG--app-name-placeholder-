@@ -381,3 +381,43 @@ html, body {
     gap: 5px; 
   }
 }
+
+.nav-links a {
+  transition: filter 0.3s ease;
+}
+
+.nav-links a:hover {
+  filter: brightness(150%);
+}
+
+.nav-links .contact-link {
+  transition: background-color 0.3s ease;
+  padding: 10px 15px; /* Adjust as needed */
+  display: inline-block;
+}
+
+.nav-links .contact-link:hover {
+  background-color: #d4c1c1; /* Adjust as needed */
+  filter: brightness(100%); /* This overrides the brightness filter from .nav-links a:hover */
+}
+
+.main-button {
+  transition: filter 0.3s ease;
+}
+
+.main-button:hover {
+  filter: brightness(150%);
+}
+
+.main-heading, .main-subhead {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5); /* Adjust as needed */
+}
+
+.footer {
+  background-color: #ff7f7f !important; /* Adjust as needed */
+}
+
+.footer-nav {
+  margin-top: 16px; /* Adjust as needed */
+  margin-left: 40px;
+}
