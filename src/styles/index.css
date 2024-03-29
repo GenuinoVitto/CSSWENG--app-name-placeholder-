@@ -348,76 +348,7 @@ html, body {
   zoom: .5;
 }
 
-/* Footer */
-.footer {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-}
-
-.footer-middle {
-  display: flex;
-  flex-direction: row;
-  padding: 0px 30px 0px 30px;
-  margin-bottom: 50px;
-}
-
-.footer-logo {
-  background: url('/src/uploads/sprite.png') ;
-  background-position: -112px -381px; 
-  width: 462px;
-  height: 264px;
-  margin-left: 140px;
-  margin-top: 50px;
-  zoom: .2;
-}
-
-.footer-nav {
-  margin-right: auto;
-  /*margin-top: 65px;*/
-}
-
-.footer-nav a{
-  display: block;
-  margin-bottom: 5px;
-  color: #000000;
-  text-decoration: none;
-}
-
-.footer-details {
-  margin-right: 20px;
-}
-
-.facebook {
-  width: 80%;
-  font-weight: 600;
-  font-size: 20px;
-  color: black;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 100px;
-}
-
-.fb-btn {
-  background-color: var(--accent1);
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  padding: 5px 20px;
-  font-weight: 600;
-  font-size: 25px;
-  border-color: transparent;
-}
-
-.fb-btn:hover {
-  border: 2px solid var(--accent2);
-}
-
-.footer-copyright p {
-  margin: auto;
-  text-align: center;
-}
-
+/* Download App */
 .download-app {
   background-color: #f4f6fc; 
   text-align: center;
@@ -450,4 +381,3 @@ html, body {
     gap: 5px; 
   }
 }
-

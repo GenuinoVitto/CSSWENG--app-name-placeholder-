@@ -170,39 +170,6 @@ html, body {
     display: inline-block;
 }
 
-/* Footer Styling */
-/* Fix for footer positioning */
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.footer {
-  position: relative;
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2);
-  clear: both;
-}
-
-.footer-contact {
-    text-align: left;
-    margin-bottom: 20px;
-    
-}
-
-.footer-contact p {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.footer-contact a {
-    display: block;
-    color: var(--primary);
-    text-decoration: none;
-    margin-bottom: 5px;
-}
-
 /* javascript style */
 .error {
     color: var(--primary); 
