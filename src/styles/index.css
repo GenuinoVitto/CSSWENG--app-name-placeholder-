@@ -375,136 +375,16 @@ html, body {
   width: auto; 
 }
 
-@media (max-width: 768px) {
-  .download-buttons {
-    flex-direction: column; 
-    gap: 5px; 
+@media (max-width: 536px) {
+  html, body{
+    max-width: 536px;
+    overflow-x: hidden;
   }
 }
 
-.nav-links a {
-  transition: filter 0.3s ease;
-}
-
-.nav-links a:hover {
-  filter: brightness(150%);
-}
-
-.nav-links .contact-link {
-  transition: background-color 0.3s ease;
-  padding: 10px 15px; /* Adjust as needed */
-  display: inline-block;
-}
-
-.nav-links .contact-link:hover {
-  background-color: #d4c1c1; /* Adjust as needed */
-  filter: brightness(100%); /* This overrides the brightness filter from .nav-links a:hover */
-}
-
-.main-button {
-  transition: filter 0.3s ease;
-}
-
-.main-button:hover {
-  filter: brightness(150%);
-}
-
-.main-heading, .main-subhead {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5); /* Adjust as needed */
-}
-
-.footer {
-  background-color: #ff7f7f !important; /* Adjust as needed */
-}
-
-.footer-nav {
-  margin-top: 16px; /* Adjust as needed */
-  margin-left: 40px;
-}
-
-@media only screen and (max-width: 414px) {
-  /* Navbar Styles */
-  .navbar {
-    height: auto;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 10px;
-  }
-
-  .nav-logo {
-    margin: auto;
-  }
-
-  .nav-links {
-    float: none;
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .nav-links a {
-    display: block;
-    margin: 10px auto;
-  }
-
-  /* Main Styles */
-  .main {
-    padding: 20px;
-    padding-bottom: 100px; /* Adjust as needed */
-  }
-
-  .main-heading {
-    font-size: 40px;
-    width: auto;
-    text-align: center;
-  }
-
-  .main-subhead {
-    width: auto;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  /* Services Styles */
-  .services {
-    padding: 10px;
-  }
-
-  .services-row {
-    grid-template-columns: auto;
-  }
-
-  .services-img {
-    float: none;
-    margin: auto;
-  }
-
-  #sedan-img,
-  #suv-img,
-  #van-img,
-  #bus-img {
-    margin-right: 0;
-  }
-
-  /* About Styles */
-  .about {
-    padding: 20px;
-    background-position: center;
-  }
-
-  .about-sec-1,
-  .about-sec-2 {
-    flex-direction: column;
-  }
-
-  .about-left-pic,
-  .about-right-pic {
-    width: auto;
-    height: auto;
-    margin: auto;
-  }
-
-  /* Download App */
-  .download-app h2 {
-    font-size: 40px;
+@media (max-width: 390px) {
+  html, body{
+    max-width: 390px;
+    overflow-x: hidden;
   }
 }
