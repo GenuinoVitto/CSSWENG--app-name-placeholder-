@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+  --primary: #BD272E;
+  --secondary: #000000;
+  --accent1: #F4F6FC;
+  --accent2: #FFFFFF;
+  --shadow: #404040 
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background: var(--secondary);
+  scroll-behavior: smooth;
+}
+
+
+/* Navbar Styles */
+.navbar {
+  margin: 0px;
+  padding: auto;
+  background-color: #f4f6fc;
+  height: 60px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  display: flex;
+  align-items: center; 
+}
+
+.nav-logo {
+  background: url('/src/uploads/sprite.png'); 
+  background-position: -114px -391px; 
+  width: 458px;
+  height: 253px;
+  margin-left: 140px;
+  zoom: .2;
+}
+
+.nav-links {
+  margin: auto;
+  float: right;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 15px;
+
+}
+
+.nav-links input {
+  color: var(--text-secondary);
+  font-weight: 700;
+  background-color: var(--primary);
+
+}
+
+.nav-links a:nth-child(2) {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+/* Main Styles */
+.main {
+  background-image: url('/src/uploads/iDOLTAXI.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 200px;
+  padding-left: 55px;
+  color: #ffffff;
+  /* border: none !important; */
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; 
+  background: linear-gradient(to bottom right, transparent 49%, var(--secondary) 50%);
+}
+
+.main:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--accent1);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.main-buttons a:last-child {
+  background-color: #000000; 
+  color: #ffffff;
+  padding: 10px 15px; 
+}
+
+.main-buttons a:first-child {
+  background-color: var(--primary); 
+  color: #ffffff;
+  padding: 10px 15px; 
+  margin-right: 10px;
+}
+
+.main-heading {
+  font-size: 70px;
+  width: 50%;
+  margin-bottom: 10px;
+  line-height: 65px;
+  text-shadow: 1px 1px 15px #000000; 
+}
+
+.main-heading strong {
+  color: #FFFFFF;
+  text-shadow: 1px 1px 10px var(--primary);
+}
+
+.main-subhead {
+  width: 50%;
+  font-size: 20px;
+  margin-top: 10;
+  padding-bottom: 10px;
+  text-shadow: 2px 1px 8px var(--shadow);
+}
+
+.main-buttons a {
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+
+
+/* Services Styles */
+.services {
+  background: var(--accent1);
+  border: 2px solid var(--accent1);
+  color: #000000;
+  padding-left: 20px;
+  /* border: none; */
+  margin: 0px;
+}
+
+
+.services:after {
+  content: '';
+  position: absolute;
+  bottom: 100;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: var(--accent1);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  transform: scaleX(-1);
+}
+
+
+.services-subhead {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.services-heading {
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.services-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.services-name {
+  color: #000000;
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
+.services-type {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+
+.services-img {
+  float: left;
+}
+
+#sedan-img {
+  background: url('/src/uploads/services-sprite.png');
+  background-position: -130px -10px;
+  width: 660px;
+  height: 550px;
+  margin-top: 10px;
+  margin-right: 40px;
+  zoom: 0.35;
+  flex-shrink: 0;
+}
+
+#suv-img {
+  background: url('/src/uploads/services-sprite.png');
+  background-position: -1080px -10px;
+  width: 660px;
+  height: 550px;
+  margin-top: 10px;
+  margin-right: 40px;
+  zoom: 0.35;
+  flex-shrink: 0; 
+}
+
+#van-img {
+  background: url('/src/uploads/services-sprite.png');
+  background-position: -130px -600px;
+  width: 660px;
+  height: 550px;
+  margin-top: 10px;
+  margin-right: 40px;
+  zoom: 0.35;
+  flex-shrink: 0; 
+}
+
+#bus-img {
+  background: url('/src/uploads/services-sprite.png');
+  background-position: -1060px -600px;
+  width: 665px;
+  height: 550px;
+  margin-top: 10px;
+  margin-right: 40px;
+  zoom: 0.35;
+  flex-shrink: 0; 
+}
+
+.services-desc {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 7px;
+  color: #000000;
+}
+
+.services-btn {
+  background-color: var(--primary);
+  color: var(--accent2);
+  text-transform: uppercase;
+  padding: 5px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  border-color: transparent;
+}
+
+.services-btn:hover {
+  border: 2px solid var(--primary);
+  box-shadow: 2px 2px 0px var(--shadow);
+}
+
+
+/* About Styles */
+.about {
+  background-image: url(/src/uploads/about-bg.png); 
+  background-position: 100px -150px;
+  color: #ffffff; 
+  padding: 30px; 
+}
+
+.about-subhead {
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.about-heading {
+  color: var(--text-secondary);
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.about-sec-1 strong,
+.about-sec-2 h1 {
+  /*
+    TO DO: find the best shadow
+  */
+  color: var(--primary); /* Changed */
+  font-weight: 800;
+  text-shadow: 3px 2px 8px var(); 
+}
+
+/* About - Section 1 */
+.about-left-pic {
+  background: url('/src/uploads/about-sprite.png');
+  background-position: -115px -54px; 
+  width: 681px;
+  height: 490px;
+  zoom: .5;
+}
+
+.about-sec-1,
+.about-sec-2 {
+  display: flex;
+}
+
+.about-sec1-content,
+.about-sec2-content {
+  width: 1000px;
+  font-size: 20px;
+  padding: 25px;
+}
+
+.about-sec1-content {
+  line-height: .5;
+}
+
+.about-sec1-content h4 {
+  color: var(--primary);
+}
+
+.about-sec1-content h1 {
+  margin-bottom: 10px;
+}
+
+/* About - Section 2 */
+.about-right-pic {
+  background: url('/src/uploads/about-sprite.png');
+  background-position: -1035px -524px; 
+  width: 625px;
+  height: 628px;
+  zoom: .5;
+}
+
+/* Download App */
+.download-app {
+  background-color: #f4f6fc; 
+  text-align: center;
+  padding: 30px 0; 
+}
+
+.download-app h2 {
+  color: #000; 
+  font-size: 60px; 
+  margin-bottom: 20px; 
+  margin-top: 0px;
+  font-weight: bold; 
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.download-apple img, .download-google img {
+  height: 60px;
+  width: auto; 
+}
+
+@media (max-width: 536px) {
+  html, body{
+    max-width: 536px;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 390px) {
+  html, body{
+    max-width: 390px;
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "idol_taxi",
+  "version": "1.0.0",
+  "description": "This is a web application by Squad S for a company, as a requirement for CSSWENG S12",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
