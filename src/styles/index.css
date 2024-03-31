@@ -421,3 +421,90 @@ html, body {
   margin-top: 16px; /* Adjust as needed */
   margin-left: 40px;
 }
+
+@media only screen and (max-width: 414px) {
+  /* Navbar Styles */
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .nav-logo {
+    margin: auto;
+  }
+
+  .nav-links {
+    float: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Main Styles */
+  .main {
+    padding: 20px;
+    padding-bottom: 100px; /* Adjust as needed */
+  }
+
+  .main-heading {
+    font-size: 40px;
+    width: auto;
+    text-align: center;
+  }
+
+  .main-subhead {
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Services Styles */
+  .services {
+    padding: 10px;
+  }
+
+  .services-row {
+    grid-template-columns: auto;
+  }
+
+  .services-img {
+    float: none;
+    margin: auto;
+  }
+
+  #sedan-img,
+  #suv-img,
+  #van-img,
+  #bus-img {
+    margin-right: 0;
+  }
+
+  /* About Styles */
+  .about {
+    padding: 20px;
+    background-position: center;
+  }
+
+  .about-sec-1,
+  .about-sec-2 {
+    flex-direction: column;
+  }
+
+  .about-left-pic,
+  .about-right-pic {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  /* Download App */
+  .download-app h2 {
+    font-size: 40px;
+  }
+}
