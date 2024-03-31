@@ -1,4 +1,5 @@
 # iDOL TAXI Website
+![image](https://github.com/GenuinoVitto/iDOL_Taxi/assets/78674453/b1c3a2d6-4c55-490c-a99d-4a50f391a094)
 This is a web application by Squad S for a company, as a requirement for CSSWENG S12
 
 ### About our Client
