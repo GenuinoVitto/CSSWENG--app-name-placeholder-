@@ -150,9 +150,10 @@ html, body {
 .find-us {
     position: relative;
     bottom: 0;
-    left: 86.5%;
+    left: 84%; /* Adjusted left position */
     transform: translateX(-50%);
     width: 370px;
+    max-width: calc(100% - 20px); /* Ensure it doesn't extend beyond viewport width */
     background-color: var(--secondary);
     color: var(--accent1);
     border-top-left-radius: 100px;
@@ -162,7 +163,7 @@ html, body {
     justify-content: center; 
     align-items: center; 
     text-decoration: none;
-}
+  }
 
 .find-us-text {
     font-size: 45px;
@@ -207,6 +208,19 @@ html, body {
     margin-bottom: 30px;
 }
 
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Footer */
 .footer {
     background-color: #F4F6FC !important; /* This is a light, pleasing shade of red, adjust as needed */
   }
