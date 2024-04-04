@@ -13,6 +13,10 @@
     margin-bottom: 20px;
 }
 
+.footer-mobile-title {
+    font-size: 14px;
+}
+
 .footer-logo {
     background: url('/src/uploads/sprite.png');
     background-position: -112px -381px;
@@ -69,6 +73,7 @@
 
 .footer-title {
     font-size: 18px;
+    color:#BD272E;
 }
 
 .footer a, .footer p {
