@@ -380,6 +380,27 @@ html, body {
     max-width: 536px;
     overflow-x: hidden;
   }
+
+  .main-heading{
+    width: 90%;
+    font-size: 35px;
+    margin-bottom: 10px;
+    line-height: 35px;
+    text-shadow: 1px 1px 15px #000000; 
+  }
+
+  .main-subhead{
+    width: 90%;
+  }
+
+  .main-buttons{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
 }
 
 @media (max-width: 390px) {
