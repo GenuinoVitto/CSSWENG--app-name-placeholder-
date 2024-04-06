@@ -43,6 +43,7 @@ html, body {
   float: right;
   margin-right: 5px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .nav-links a {
@@ -65,6 +66,15 @@ html, body {
   color: #ffffff;
   padding: 10px 15px;
 }
+
+.nav-links a:nth-child(2):hover {
+  box-shadow: 2px 2px 0px var(--shadow);
+}
+
+.nav-links .contact-link:hover {
+  color: var(--primary);
+}
+
 
 /* Main Styles */
 .main {
@@ -140,7 +150,9 @@ html, body {
   box-shadow: 0 0 5px var(--shadow);
 }
 
-
+.main-buttons a:hover {
+  box-shadow: 0px 1px 6px 3px rgb(104, 103, 103);
+}
 
 /* Services Styles */
 .services {
@@ -273,6 +285,96 @@ html, body {
   box-shadow: 2px 2px 0px var(--shadow);
 }
 
+/* Waiting Areas Styles */
+.waitarea {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.waitarea-info {
+  margin-right: 75px;
+}
+
+.waitarea-subhead {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.waitarea-heading {
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.waitarea-name {
+  color: #000000;
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 0;
+  margin-left: 50px;
+}
+
+.waitarea-name span {
+  color: var(--primary);
+}
+
+.waitarea-carousel {
+  max-width: 30%;
+  max-height: 30%;
+  margin-left: 125px;
+}
+
+.carousel-slide {
+  max-width: 150%;
+  animation: fade;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {content: url("/src/uploads/waitarea/1.png"); opacity: 0.0}
+  2% {content: url("/src/uploads/waitarea/1.png"); opacity: 1.0}
+  8% {content: url("/src/uploads/waitarea/1.png"); opacity: 1.0}
+  10% {content: url("/src/uploads/waitarea/1.png"); opacity: 0.0}
+  11% {content: url("/src/uploads/waitarea/2.png"); opacity: 0.0}
+  13% {content: url("/src/uploads/waitarea/2.png"); opacity: 1.0}
+  19% {content: url("/src/uploads/waitarea/2.png"); opacity: 1.0}
+  21% {content: url("/src/uploads/waitarea/2.png"); opacity: 0.0}
+  22% {content: url("/src/uploads/waitarea/3.png"); opacity: 0.0}
+  24% {content: url("/src/uploads/waitarea/3.png"); opacity: 1.0}
+  30% {content: url("/src/uploads/waitarea/3.png"); opacity: 1.0}
+  32% {content: url("/src/uploads/waitarea/3.png"); opacity: 0.0}
+  33% {content: url("/src/uploads/waitarea/4.png"); opacity: 0.0}
+  35% {content: url("/src/uploads/waitarea/4.png"); opacity: 1.0}
+  41% {content: url("/src/uploads/waitarea/4.png"); opacity: 1.0}
+  43% {content: url("/src/uploads/waitarea/4.png"); opacity: 0.0}
+  44% {content: url("/src/uploads/waitarea/5.png"); opacity: 0.0}
+  46% {content: url("/src/uploads/waitarea/5.png"); opacity: 1.0}
+  52% {content: url("/src/uploads/waitarea/5.png"); opacity: 1.0}
+  54% {content: url("/src/uploads/waitarea/5.png"); opacity: 0.0}
+  55% {content: url("/src/uploads/waitarea/6.png"); opacity: 0.0}
+  57% {content: url("/src/uploads/waitarea/6.png"); opacity: 1.0}
+  63% {content: url("/src/uploads/waitarea/6.png"); opacity: 1.0}
+  65% {content: url("/src/uploads/waitarea/6.png"); opacity: 0.0}
+  66% {content: url("/src/uploads/waitarea/7.png"); opacity: 0.0}
+  68% {content: url("/src/uploads/waitarea/7.png"); opacity: 1.0}
+  74% {content: url("/src/uploads/waitarea/7.png"); opacity: 1.0}
+  76% {content: url("/src/uploads/waitarea/7.png"); opacity: 0.0}
+  77% {content: url("/src/uploads/waitarea/8.png"); opacity: 0.0}
+  79% {content: url("/src/uploads/waitarea/8.png"); opacity: 1.0}
+  85% {content: url("/src/uploads/waitarea/8.png"); opacity: 1.0}
+  87% {content: url("/src/uploads/waitarea/8.png"); opacity: 0.0}
+  88% {content: url("/src/uploads/waitarea/9.png"); opacity: 0.0}
+  90% {content: url("/src/uploads/waitarea/9.png"); opacity: 1.0}
+  96% {content: url("/src/uploads/waitarea/9.png"); opacity: 1.0}
+  98% {content: url("/src/uploads/waitarea/9.png"); opacity: 0.0}
+  99% {content: url("/src/uploads/waitarea/1.png"); opacity: 0.0}
+  100% {content: url("/src/uploads/waitarea/1.png"); opacity: 0.0}
+}
 
 /* About Styles */
 .about {
@@ -298,12 +400,8 @@ html, body {
 
 .about-sec-1 strong,
 .about-sec-2 h1 {
-  /*
-    TO DO: find the best shadow
-  */
-  color: var(--primary); /* Changed */
+  color: var(--primary);
   font-weight: 800;
-  text-shadow: 3px 2px 8px var(); 
 }
 
 /* About - Section 1 */
@@ -335,10 +433,6 @@ html, body {
   color: var(--primary);
 }
 
-.about-sec1-content h1 {
-  margin-bottom: 10px;
-}
-
 /* About - Section 2 */
 .about-right-pic {
   background: url('/src/uploads/about-sprite.png');
@@ -347,6 +441,15 @@ html, body {
   height: 628px;
   zoom: .5;
 }
+
+.about-sec2-content h1 {
+  line-height: 2px;
+}
+
+.about-mission h1 {
+  margin-top: 50px; /* Adjust the value as needed */
+}
+
 
 /* Download App */
 .download-app {
@@ -401,6 +504,50 @@ html, body {
   }
 
 
+@media (max-width: 768px) {
+  .download-buttons {
+    flex-direction: column; 
+    gap: 5px; 
+  }
+}
+
+.nav-links a {
+  transition: filter 0.3s ease;
+}
+
+.nav-links a:nth-child(2):hover {
+  box-shadow: 2px 2px 0px var(--shadow);
+}
+
+.nav-links .contact-link {
+  transition: background-color 0.3s ease;
+  padding: 10px 15px; /* Adjust as needed */
+  display: inline-block;
+}
+
+.nav-links .contact-link:hover {
+  color: var(--primary);
+}
+
+.main-button {
+  transition: filter 0.3s ease;
+}
+
+.main-buttons a:hover {
+  box-shadow: 0px 1px 6px 3px rgb(104, 103, 103);
+}
+
+.main-heading, .main-subhead {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5); /* Adjust as needed */
+}
+
+.footer {
+  background-color: var(--accent1) !important; /*Adjust as needed*/
+}
+
+.footer-nav {
+  margin-top: 16px; /* Adjust as needed */
+  margin-left: 40px;
 }
 
 @media (max-width: 390px) {
@@ -408,4 +555,5 @@ html, body {
     max-width: 390px;
     overflow-x: hidden;
   }
+}
 }

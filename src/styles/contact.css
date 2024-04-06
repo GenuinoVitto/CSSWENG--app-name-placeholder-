@@ -20,12 +20,17 @@ html, body {
 #contact-core h2, 
 #contact-form label, 
 #contact-form button {
-    color: var(--text-accent); /* This is the color used in "Let's get connected" */
+    color: var(--secondary); /* This is the color used in "Let's get connected" */
 }
 
 #contact-core p {
-    color:#000000; /* Send us an email */
-    margin-top: 0; 
+    color:var(--secondary); /* Send us an email */
+    margin-top: 0;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 80px;
+    font-weight: 700;
+    position: relative;
 }
 
 #contact-form .form-group {
@@ -58,17 +63,22 @@ html, body {
     padding: 40px;
     text-align: center;
     padding-top: 20px;
+    width: 60%;
+    margin: 0 auto;
 }
 
 #contact-core h3 {
-    font-weight: 600; /* Adjust the font weight as needed */
+    font-weight: 700; /* Adjust the font weight as needed */
+    margin: 0;
+    font-size: 30px;
 }
 
 #contact-core h2 {
-    font-size: 2em;
+    font-size: 40px;
     font-weight: 900; /* Adjust the font weight as needed */
     color: var(--primary);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
 
 /* Clear floats after the contact section */
@@ -89,7 +99,7 @@ html, body {
     display: block;
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 20px;
 }
 
 #contact-form input[type="email"],
@@ -102,6 +112,8 @@ html, body {
     font-weight: 400; /* Adjust the font weight as needed */
     font-size: 1em;
     box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid rgb(104, 103, 103);
 }
 
 #contact-form textarea {
@@ -109,14 +121,13 @@ html, body {
 }
 
 .email-feedback {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--secondary);
+    color: var(--accent1);
     margin: 10px;
-    padding: 20px 60px;
+    padding: 15px 30px;
     border: none;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 1em;
+    font-weight: 700;
+    font-size: 18px;
     cursor: pointer;
     box-sizing: border-box;
     text-decoration: none;
@@ -139,26 +150,26 @@ html, body {
 .find-us {
     position: relative;
     bottom: 0;
-    left: 84.7%;
+    left: 84%; /* Adjusted left position */
     transform: translateX(-50%);
     width: 370px;
-    background-color: #000000;
-    color: white;
-    border-top-left-radius: 80px;
+    max-width: calc(100% - 20px); /* Ensure it doesn't extend beyond viewport width */
+    background-color: var(--secondary);
+    color: var(--accent1);
+    border-top-left-radius: 100px;
     text-align: center;
     padding: 20px;
-    z-index: 999;
     display: flex; 
     justify-content: center; 
     align-items: center; 
     text-decoration: none;
-}
+  }
 
 .find-us-text {
-    font-size: 2em;
+    font-size: 45px;
     font-weight: 700;
     margin-right: 10px; 
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .facebook-icon {
@@ -166,7 +177,7 @@ html, body {
     background-position: -1542px -402px;
     width: 208px;
     height: 206px;
-    zoom: .3;
+    zoom: .4;
     display: inline-block;
 }
 
@@ -197,8 +208,21 @@ html, body {
     margin-bottom: 30px;
 }
 
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Footer */
 .footer {
-    background-color: #ff7f7f !important; /* This is a light, pleasing shade of red, adjust as needed */
+    background-color: #F4F6FC !important; /* This is a light, pleasing shade of red, adjust as needed */
   }
 
   .footer-nav {
