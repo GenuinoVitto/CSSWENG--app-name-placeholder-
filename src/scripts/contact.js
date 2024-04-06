@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //  Form checker
     emailFeedbackLink.addEventListener('click', function(event) {
-        const legitEmailDomains = ['@gmail.com', '@yahoo.com', '@outlook.com', '@icloud.com', '@hotmail.com'];
+        const legitEmailDomains = ['@gmail.com', '@yahoo.com', '@outlook.com', '@icloud.com', '@hotmail.com', '@dlsu.edu.ph'];
         const email = emailInput.value.trim();
         const message = messageInput.value.trim();
 
