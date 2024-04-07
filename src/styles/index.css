@@ -503,14 +503,6 @@ html, body {
     justify-content: space-between;
   }
 
-
-@media (max-width: 768px) {
-  .download-buttons {
-    flex-direction: column; 
-    gap: 5px; 
-  }
-}
-
 .nav-links a {
   transition: filter 0.3s ease;
 }
@@ -549,11 +541,30 @@ html, body {
   margin-top: 16px; /* Adjust as needed */
   margin-left: 40px;
 }
-
-@media (max-width: 390px) {
+/* MEDIA QUERY [Smartphone] */
+@media (max-width: 768px) {
   html, body{
     max-width: 390px;
     overflow-x: hidden;
+  }
+
+  .download-buttons {
+    flex-direction: column; 
+    gap: 5px; 
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* SERVICES SECTION */
+  .services-row {
+    display:list-item;
+    list-style: none;
+  }
+
+  .waitarea-name {
+    font-size: 3px;
   }
 }
 }
