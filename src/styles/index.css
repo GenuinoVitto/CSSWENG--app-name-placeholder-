@@ -325,8 +325,6 @@ html, body {
 .waitarea-carousel {
   max-width: 400px;
   max-height: 400px;
-  min-width: 200px;
-  max-width: 200px;
   margin-left: 125px;
 }
 
