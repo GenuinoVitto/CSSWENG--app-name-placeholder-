@@ -541,6 +541,8 @@ html, body {
   margin-top: 16px; /* Adjust as needed */
   margin-left: 40px;
 }
+
+
 /* MEDIA QUERY [Smartphone] */
 @media (max-width: 768px) {
   html, body{
@@ -564,7 +566,80 @@ html, body {
   }
 
   .waitarea-name {
-    font-size: 3px;
+    font-size: 20px;
+  }
+
+  .waitarea-text {
+    width: 40vh; 
+  }
+  
+  /*.waitarea-info {
+    height: vh;
+  } */
+
+  /* .waitarea-carousel {
+    width: 40vh;
+  } */
+
+  .about h1 {
+    font-size: 15px;
+  }
+
+  .about-sec1-content {
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    line-height: 20px;
+  }
+
+  .about-sec1-content h4 {
+    display: block;
+  }
+  
+  .about-right-pic {
+    width: 20px;
+  }
+
+  .about-left-pic {
+    width: 20px;
+  }
+
+  .download-app h2 {
+    font-size: 15px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+  .footer-middle .footer-title {
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+  }
+
+  .footer-contact {
+    font-size: 10px;
+  }
+
+  .footer-nav {
+    font-size: 10px;
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .footer-nav .footer-title {
+    margin-bottom: 10px;
+  }
+
+  .footer-details {
+    font-size: 10px;
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
   }
 }
 }
