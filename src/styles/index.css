@@ -323,13 +323,13 @@ html, body {
 }
 
 .waitarea-carousel {
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 700px;
+  max-height: 700px;
   margin-left: 125px;
 }
 
 .carousel-slide {
-  max-width: 150%;
+  max-width: 100%;
   animation: fade;
   animation-duration: 40s;
   animation-iteration-count: infinite;
