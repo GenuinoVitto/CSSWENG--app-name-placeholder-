@@ -293,7 +293,8 @@ html, body {
 }
 
 .waitarea-info {
-  margin-right: 75px;
+  margin-left: 0px;
+  margin-right: auto;
 }
 
 .waitarea-subhead {
@@ -325,7 +326,7 @@ html, body {
 .waitarea-carousel {
   max-width: 400px;
   max-height: 400px;
-  margin-left: 125px;
+  margin: auto;
 }
 
 .carousel-slide {
@@ -572,14 +573,15 @@ html, body {
     width: 40vh; 
   }
   
-  /* to fix if pictures are needed in mobile */
-  /*.waitarea-info {
-    height: vh;
-  } */
-
-  /* .waitarea-carousel {
+  .waitarea-info {
     width: 40vh;
-  } */
+    margin-bottom: auto;
+  }
+
+  .waitarea-carousel {
+    margin-top: auto;
+    width: 40vh;
+  }
 
   .about h1 {
     font-size: 15px;
