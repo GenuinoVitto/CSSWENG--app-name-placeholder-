@@ -565,8 +565,13 @@ html, body {
     list-style: none;
   }
 
+  .waitarea {
+    flex-direction: column;
+  }
+  
   .waitarea-name {
     font-size: 20px;
+    margin-left: 0px;
   }
 
   .waitarea-text {
