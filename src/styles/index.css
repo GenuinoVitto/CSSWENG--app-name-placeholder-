@@ -572,6 +572,7 @@ html, body {
     width: 40vh; 
   }
   
+  /* to fix if pictures are needed in mobile */
   /*.waitarea-info {
     height: vh;
   } */
@@ -612,7 +613,10 @@ html, body {
   }
 
   .footer-logo {
-    width: 30px
+    justify-content: center;
+    align-self: center;
+    margin: 0px;
+    padding: 0px;
 
   }
 
@@ -640,7 +644,7 @@ html, body {
   .footer-nav {
     font-size: 10px;
     margin: 0;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .footer-nav .footer-title {

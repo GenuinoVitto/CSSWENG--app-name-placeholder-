@@ -229,3 +229,46 @@ html, body {
     margin-top: 16px; /* Adjust as needed */
     margin-left: 40px;
   }
+
+
+@media (max-width: 768px) {
+
+    #contact-core h2,
+    #contact-core h3,
+    #contact-core p {
+        text-align: center;
+        justify-items: center;
+        justify-self: center;
+        justify-content: center;
+        margin: 0;
+        margin-left: 0;
+    }
+
+    #contact-core h2 {
+        font-size: 30px;
+    }
+
+    #contact-core p {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    #contact-core .email-feedback {
+        width: 20px;
+        background-color: #BD272E;
+        font-size: 10px;
+        margin: 0;
+        padding: 10px;
+        border-radius: 25vh;
+    }
+
+    .find-us {
+        width: 500px;
+        transform: translateX(-75%);
+        padding: 10px;
+    }
+
+    .find-us-text {
+        font-size: 20px;
+    }
+}
