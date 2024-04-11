@@ -290,6 +290,7 @@ html, body {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
+  max-height: 100vh;
 }
 
 .waitarea-info {
@@ -324,16 +325,15 @@ html, body {
 }
 
 .waitarea-carousel {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 40vw;
+  height: 600px;
   margin: auto;
+  overflow: hidden;
 }
 
 .carousel-slide {
   max-width: 100%;
-  animation: fade;
-  animation-duration: 40s;
-  animation-iteration-count: infinite;
+  animation: fade 40s ease-in-out 0s infinite normal;
 }
 
 @keyframes fade {
